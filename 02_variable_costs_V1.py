@@ -2,7 +2,7 @@ import pandas
 
 
 # functions go here
-def num_check (question, error, num_type):
+def num_check(question, error, num_type):
     valid = False
     while not valid:
 
@@ -66,5 +66,41 @@ while item_name.lower() != "xxx":
     if item_name.lower() == "xxx":
         break
 
-    quantity = num_check()
+    quantity = num_check("Quantity: ",
+                         "The amount must be a whole number"
+                         "more than zero", int)
+
+    price = num_check("How much for a single item? $",
+                      "the price must be a number ,more "
+                      "than 0>",
+                      float)
+
+    # add item, quantity and price to lists
+    item_list.append(item_name)
+    quantity_list.append(quantity)
+    price_list.append(price)
+
+variable_frame = pandas.DataFrame(variable_dict)
+variable_frame = variable_frame.set_index('Item')
+
+# calculate the cost of each component
+variable_frame['Cost'] = variable_frame['Quantity'] \
+                         * variable_frame["Price"]
+
+# find subtotal
+variable_sub = variable_frame['Cost'].sum()
+
+# currency formatting (uses currency function)
+add_dollars = ['Price', 'Cost']
+for item in add_dollars:
+    variable_frame[item] = variable_frame[item].apply(currency)
+
+
+# *** Printing area ***
+
+print(variable_frame)
+
+print()
+
+
 
