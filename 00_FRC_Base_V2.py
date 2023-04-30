@@ -33,13 +33,48 @@ def yes_no(question):
 
         print("please enter either yes or no\n")
 
+
+# Ensures that the string isn't blank
+def not_blank(question, error):
+    valid = False
+    while not valid:
+        response = input(question)
+
+        if response == "":
+            print("{}. \n Please try again. \n".format(error))
+            continue
+
+        return response
+
+
+# currency formatting
+def currency(x):
+    return f"${x:.2f}"
+    # return "${:.2f}".format(x)
+
+
+# Gets expenses, returns list wish has the data frame and sub-total
+def get_expenses(var_fixed):
+    # Set up dictionaries and lists
+
+    item_list = []
+    quantity_list = []
+    price_list = []
+
+    expense_dict = {
+        "Item": item_list,
+        "Quantity": quantity_list,
+        "Price": price_list
+
+    }
+
+
 # Main routine goes here
-get_int = num_check("How many do you need? ", "Please enter an amount more than 0\n"
-int)
 
-get_cost = num_check("How much does it cost? $", "Please enter a number more than 0\n"
-float)
+# set up dictionaries and lists
 
+item_list = []
+quantity_list = []
 
 
 
