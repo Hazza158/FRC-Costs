@@ -1,0 +1,28 @@
+CHicken
+
+*** Variable Costs ***
+
+        Item  Quantity  Price
+0       Mugs       300   1.00
+1   Printing       300   0.50
+2  Packaging        50   0.75
+
+{Variable Costs Sub Total: $2.25}
+
+*** Fixed Costs ***
+
+          Item  Price
+0         Rent     25
+1      Artwork     35
+2  Advertising     10
+
+** Fixed Costs Sub Total: $70 **
+
+-* Selling Information *-
+
+ Profit Target: $100.00
+
+Required Sales: $200.00
+
+The recommended price is $5.00
+
