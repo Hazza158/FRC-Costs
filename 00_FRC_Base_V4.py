@@ -246,15 +246,36 @@ print(f"Selling Price (unrounded): ${selling_price:.2f}")
 recommended_price = round_up(selling_price, round_to)
 
 # Write to File
+selling_info = "-* Selling Information *-"
+product_name_heading = f"***** {product_name}  *****"
+variable_heading = "*** Variable Costs ***"
+variable_total_costs = "{Variable Costs Sub Total: $2.25}"
+profit_target_txt = f" Profit Target: ${profit_target}"
+fixed_heading = "*** Fixed Costs ***"
+fixed_total_costs = "** Fixed Costs Sub Total: ${fi} **"
+required_sales = "Required Sales: $200.00"
+recommended_price = "The recommended price is $5.00"
 
-# **** Printing Area ****
-print()
-print("**** Fun Raising - {} *****".format(product_name))
-print()
-expense_print("Variable", variable_frame, variable_sub)
+# list holding stuff to print / write to file
+to_write = [product_name_heading, variable_heading, variable_txt,
+            variable_total_costs, fixed_heading, fixed_txt, fixed_total_costs,
+            selling_info, profit_target_txt, required_sales, recommended_price]
 
-if have_fixed == "yes":
-    expense_print("Fixed", fixed_frame[['Cost']], fixed_sub)
-print()
-print(f"**** Total Costs: ${sales_needed:.2f} ****")
-print()
+# Write to file
+# create file to hold data (add .txt extension)
+file_name = "{}.txt".format(product_name)
+text_file = open(file_name, "w+")
+
+# heading
+for item in to_write:
+    text_file.write(item)
+    text_file.write("\n\n")
+
+# close file
+text_file.close()
+
+
+# print stuff
+for item in to_write:
+    print(item)
+    print()
