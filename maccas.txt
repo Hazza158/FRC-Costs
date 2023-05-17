@@ -1,0 +1,28 @@
+***** maccas  *****
+
+*** Variable Costs ***
+
+        Quantity  Price    Cost
+Item                           
+burger        15  $3.00  $45.00
+drink         10  $2.00  $20.00
+chips         20  $1.50  $30.00
+
+{Variable Costs Sub Total: $2.25}
+
+*** Fixed Costs ***
+
+      Quantity  Price   Cost
+Item                        
+n            1  $1.00  $1.00
+
+** Fixed Costs Sub Total: ${fi} **
+
+-* Selling Information *-
+
+ Profit Target: $192.0
+
+Required Sales: $200.00
+
+The recommended price is $5.00
+

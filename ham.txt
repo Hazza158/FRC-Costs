@@ -1,0 +1,24 @@
+***** ham  *****
+
+*** Variable Costs ***
+
+      Quantity  Price   Cost
+Item                        
+r rv         2  $3.00  $6.00
+
+{Variable Costs Sub Total: $2.25}
+
+*** Fixed Costs ***
+
+
+
+** Fixed Costs Sub Total: ${fi} **
+
+-* Selling Information *-
+
+ Profit Target: $0.30000000000000004
+
+Required Sales: $200.00
+
+The recommended price is $5.00
+

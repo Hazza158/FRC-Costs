@@ -252,7 +252,7 @@ variable_heading = "*** Variable Costs ***"
 variable_total_costs = "{Variable Costs Sub Total: $2.25}"
 profit_target_txt = f" Profit Target: ${profit_target}"
 fixed_heading = "*** Fixed Costs ***"
-fixed_total_costs = "** Fixed Costs Sub Total: ${fi} **"
+fixed_total_costs = f"** Fixed Costs Sub Total: ${fi} **"
 required_sales = "Required Sales: $200.00"
 recommended_price = "The recommended price is $5.00"
 
