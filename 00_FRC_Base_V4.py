@@ -132,8 +132,7 @@ def expense_print(heading, frame, subtotal):
 def profit_goal(total_costs):
     # Initialise variables and error message
     error = "Please enter a VALID profit goal " \
-            "(no, you can't do 0 because then it's not a goal [yes carl, we're talking about you." \
-            "])\n"
+            "(sorry, you can't do 0 because then it's not a goal \n"
 
     profit_type = "unknown"
 
@@ -252,7 +251,7 @@ variable_heading = "*** Variable Costs ***"
 variable_total_costs = "{Variable Costs Sub Total: $2.25}"
 profit_target_txt = f" Profit Target: ${profit_target}"
 fixed_heading = "*** Fixed Costs ***"
-fixed_total_costs = f"** Fixed Costs Sub Total: ${fi} **"
+fixed_total_costs = f"** Fixed Costs Sub Total: ${get_expenses} **"
 required_sales = "Required Sales: $200.00"
 recommended_price = "The recommended price is $5.00"
 
